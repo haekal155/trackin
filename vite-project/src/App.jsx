@@ -13,6 +13,8 @@ import Laporan from './pages/Laporan'
 import "./App.css"
 import "./index.css"
 import Dashboard from './pages/Dashboard';
+import BerandaKasir from './pages/BerandaKasir';
+import StokBarangKasir from './pages/StokBarangKasir';
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/stokbarang' element={<StokBarang />} />
         <Route path='/laporan' element={<Laporan />} />
+        <Route path='/berandakasir' element={<BerandaKasir />} />
+        <Route path='/stokbarangkasir' element={<StokBarangKasir />} />
       </Routes>
     </Router>
   )

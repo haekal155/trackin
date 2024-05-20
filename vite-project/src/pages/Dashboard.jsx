@@ -43,6 +43,10 @@ const Dashboard = () => {
             <h2 className="text-xl font-semibold mb-2 pt-5">Top Item</h2>
             </div>
         </div>
+
+        <div className='sticky w-80 h-full flex flex-col bg-gradient-to-b from-second-color via-fourth-color to-second-color'>
+            <h1 className='text-4xl font-semibold mb-2'>Daftar Kasir</h1>
+        </div>
     </div>
   )
 }
