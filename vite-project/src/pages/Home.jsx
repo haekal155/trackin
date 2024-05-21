@@ -20,7 +20,7 @@ const Home = () => {
                     <div className='md:w-1/2'>
                         <h1 className='text-5xl font-semibold mb-4 text-black md:w-3/4 leading-snug'>Ayo Manajemen Inventaris Anda Dengan Mudah</h1>
                         <p className='text-black text-base mb-8'>TrackIn adalah solusi bagi Anda untuk mengelola produk dari jarak jauh agar lebih mudah</p>
-                        <button className='px-7 py-2 bg-primary-color text-white rounded hover:bg-black transition-all duration-300 hover:-translate-y-4'>Pelajari lebih lanjut</button>
+                        <button className='px-7 py-2 bg-primary-color text-white rounded hover:bg-black transition-all duration-300'>Pelajari lebih lanjut</button>
                         </div>
                 </div>
             </div>

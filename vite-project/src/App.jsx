@@ -12,9 +12,10 @@ import StokBarang from './pages/StokBarang'
 import Laporan from './pages/Laporan'
 import "./App.css"
 import "./index.css"
-import Dashboard from './pages/Dashboard';
+import Beranda from './pages/Beranda';
 import BerandaKasir from './pages/BerandaKasir';
 import StokBarangKasir from './pages/StokBarangKasir';
+import Pengaturan from './pages/Pengaturan';
 
 const App = () => {
   return (
@@ -24,11 +25,12 @@ const App = () => {
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/lupapassword' element={<LupaPassword />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/beranda' element={<Beranda />} />
         <Route path='/stokbarang' element={<StokBarang />} />
         <Route path='/laporan' element={<Laporan />} />
         <Route path='/berandakasir' element={<BerandaKasir />} />
         <Route path='/stokbarangkasir' element={<StokBarangKasir />} />
+        <Route path='/pengaturan' element={<Pengaturan />} />
       </Routes>
     </Router>
   )

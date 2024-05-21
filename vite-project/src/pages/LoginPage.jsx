@@ -15,9 +15,9 @@ const Login = () => {
 
         <div className='w-1/2 items-center h-full bg-white flex flex-col p-20'>
 
-            <div className='w-20 flex flex-col items-center justify-center mb-8'>
+            <div className='w-20 flex flex-col items-center justify-center mb-10'>
                 <img src="public/trackinlogo.png" />
-                <h3 className='font-bold'>TrackIn</h3>
+                <h3>TrackIn</h3>
             </div>
 
             <div className='w-full flex items-center justify-center pb-8'>
@@ -37,7 +37,7 @@ const Login = () => {
             </div>
 
             <div className='flex justify-center pt-10'>
-                <button onClick={() => navigate('/dashboard')} className='w-80 py-2 bg-primary-color text-white rounded-xl hover:bg-black'>Login</button>
+                <button onClick={() => navigate('/beranda')} className='w-80 py-2 bg-primary-color text-white rounded-xl hover:bg-black'>Login</button>
             </div>
 
             <div className='w-full flex items-center justify-center pt-3'>

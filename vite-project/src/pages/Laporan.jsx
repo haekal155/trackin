@@ -13,10 +13,10 @@ const Laporan = () => {
             </div>
 
             <ul className='w-20 gap-5 absolute bottom-[40%] left-[35%] flex flex-col'>
-                <li className='cursor-pointer' onClick={() => navigate('/dashboard')}>Beranda</li>
-                <li className='cursor-pointer' onClick={() => navigate('/stokbarang')}>Stok</li>
-                <li className='cursor-pointer' onClick={() => navigate('/laporan')}>Laporan</li>
-                <li>Pengaturan</li>
+                <li className='hover:flex justify-center cursor-pointer transition duration-200 text-black hover:bg-primary-color hover:text-white rounded-lg transform hover:scale-110' onClick={() => navigate('/beranda')}>Beranda</li>
+                <li className='hover:flex justify-center cursor-pointer transition duration-200 text-black hover:bg-primary-color hover:text-white rounded-lg transform hover:scale-110' onClick={() => navigate('/stokbarang')}>Stok</li>
+                <li className='flex justify-center cursor-pointer transition duration-200 bg-primary-color text-white rounded-lg transform scale-110' onClick={() => navigate('/laporan')}>Laporan</li>
+                <li className='hover:flex justify-center cursor-pointer transition duration-200 text-black hover:bg-primary-color hover:text-white rounded-lg transform hover:scale-110' onClick={() => navigate('/pengaturan')}>Pengaturan</li>
             </ul>
             
             <div className='gap-5 absolute bottom-[10%] left-[12%] flex justify-center'>
@@ -29,7 +29,9 @@ const Laporan = () => {
 
             <table className='bg-second-color border mt-11 ml-auto mr-auto text-center rounded-lg'>
                 <thead className='text-center'>
-                    <input type="text"/>
+                    <div className='rounded-xl'>
+                        <input type="text"/>
+                    </div>
                     <tr className=''>
                         <th>No</th>
                         <th>Nama Barang</th>

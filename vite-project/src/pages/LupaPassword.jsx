@@ -15,9 +15,9 @@ const LupaPassword = () => {
 
         <div className='w-1/2 items-center h-full bg-white flex flex-col p-20'>
 
-            <div className='w-20 flex flex-col items-center justify-center pb-8'>
+            <div className='w-20 flex flex-col items-center justify-center mb-10'>
                 <img src="public/trackinlogo.png" />
-                <h3 className='font-bold'>TrackIn</h3>
+                <h3>TrackIn</h3>
             </div>
 
             <div className='w-full flex flex-col items-center justify-center pb-8'>
