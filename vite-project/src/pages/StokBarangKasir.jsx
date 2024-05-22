@@ -15,7 +15,7 @@ const StokBarangKasir = () => {
             <ul className='w-20 gap-5 absolute bottom-[40%] left-[35%] flex flex-col'>
                 <li className='cursor-pointer' onClick={() => navigate('/berandakasir')}>Beranda</li>
                 <li className='cursor-pointer' onClick={() => navigate('/stokbarangkasir')}>Stok</li>
-                <li>Pengaturan</li>
+                <li className='cursor-pointer' onClick={() => navigate('/pengaturankasir')}>Pengaturan</li>
             </ul>
             
             <div className='gap-5 absolute bottom-[10%] left-[12%] flex justify-center'>

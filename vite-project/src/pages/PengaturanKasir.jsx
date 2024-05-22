@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const BerandaKasir = () => {
+const PengaturanKasir = () => {
     const navigate = useNavigate()
 
   return (
@@ -24,10 +24,10 @@ const BerandaKasir = () => {
         </div>
 
         <div className='items-center bg-white p-10'>
-            <h1 className='text-4xl font-semibold mb-2'>Kasir</h1>
+            <h1 className='text-4xl font-semibold mb-2'>Pengaturan</h1>
         </div>
     </div>
   )
 }
 
-export default BerandaKasir
+export default PengaturanKasir

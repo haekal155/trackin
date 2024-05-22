@@ -16,6 +16,7 @@ import Beranda from './pages/Beranda';
 import BerandaKasir from './pages/BerandaKasir';
 import StokBarangKasir from './pages/StokBarangKasir';
 import Pengaturan from './pages/Pengaturan';
+import PengaturanKasir from './pages/PengaturanKasir';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='/berandakasir' element={<BerandaKasir />} />
         <Route path='/stokbarangkasir' element={<StokBarangKasir />} />
         <Route path='/pengaturan' element={<Pengaturan />} />
+        <Route path='/pengaturankasir' element={<PengaturanKasir />} />
       </Routes>
     </Router>
   )

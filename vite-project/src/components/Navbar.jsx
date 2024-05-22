@@ -13,7 +13,7 @@ const Navbar = () => {
         <Link to="/" className='nav-link'>
           <li className='border-transparent transition duration-200 py-5 hover:text-primary-color'>Beranda</li>
         </Link>
-        <Link to="section2" smooth={true} duration={500}>
+        <Link to="/" smooth={true} duration={500}>
           <li className='border-transparent transition duration-200 py-5 hover:text-primary-color'>Tentang</li>
         </Link>
         <Link to="/" className='nav-link'>

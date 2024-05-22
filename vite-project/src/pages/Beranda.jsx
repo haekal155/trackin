@@ -34,7 +34,7 @@ const Beranda = () => {
                 <p className="list-disc list-inside">Total Order Hari ini</p>
             </div>
 
-            <div className="bg-fifth-color p-4 rounded-lg shadow-md mb-6 size-2/3 ml-6">
+            <div className="bg-fifth-color p-4 rounded-lg shadow-md mb-6 size-3/4 mr-6">
                 <span className="material-icons bg-white rounded-md size-10 flex items-center justify-center">monetization_on</span>
                 <h2 className="text-xl font-semibold mb-2 pt-5">Rp 1.000.000</h2>
                 <p className="list-disc list-inside">Total Pendapatan Hari ini</p>
