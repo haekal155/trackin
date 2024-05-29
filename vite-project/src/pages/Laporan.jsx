@@ -3,7 +3,11 @@ import { useNavigate } from 'react-router-dom'
 
 const Laporan = () => {
     const navigate = useNavigate()
-    
+    const data = [
+        { no: 1, barang: 'Royal Canin', stok: '20', harga: 'Rp80.000' },
+        { no: 2, barang: 'Obat Kucing', stok: '10', harga: 'Rp100.000' },
+        { no: 3, barang: 'Mainan Kucing', stok: '50', harga: 'Rp8.000' }]
+
   return (
     <div className='w-full h-screen flex items-start'>
         <div className='relative w-80 h-full flex flex-col bg-gradient-to-b from-second-color via-fourth-color to-second-color'>
@@ -27,41 +31,30 @@ const Laporan = () => {
         <div className='items-center bg-white p-10'>
             <h1 className='text-4xl font-semibold mb-2'>Laporan</h1>
 
-            <table className='bg-second-color border mt-11 ml-auto mr-auto text-center rounded-lg'>
-                <thead className='text-center'>
-                    <div className='rounded-xl'>
-                        <input type="text"/>
-                    </div>
-                    <tr className=''>
-                        <th>No</th>
-                        <th>Nama Barang</th>
-                        <th>Jumlah Stok</th>
-                        <th>Jumlah Stok Terjual</th>
-                        <th>Harga</th>
-                        <th>Total Harga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Royal Canin</td>
-                        <td>20</td>
-                        <td>Rp80.000</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Obat Kucing</td>
-                        <td>10</td>
-                        <td>Rp100.000</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mainan Kucing</td>
-                        <td>50</td>
-                        <td>Rp8.000</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="overflow-x-auto">
+                <table className="min-w-full bg-white border border-gray-200">
+                    <thead>
+                        <tr>
+                            <th className="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left">No</th>
+                            <th className="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left">Nama Barang</th>
+                            <th className="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left">Jumlah Stok</th>
+                            <th className="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left">Harga</th>
+                            <th className="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {data.map((row) => (
+                            <tr key={row.no} className="hover:bg-gray-100">
+                            <td className="py-2 px-4 border-b border-gray-200">{row.no}</td>
+                            <td className="py-2 px-4 border-b border-gray-200">{row.barang}</td>
+                            <td className="py-2 px-4 border-b border-gray-200">{row.stok}</td>
+                            <td className="py-2 px-4 border-b border-gray-200">{row.harga}</td>
+                            <td className="py-2 px-4 border-b border-gray-200"></td>
+                        </tr>
+                        ))}
+                    </tbody>
+                </table>    
+            </div>
         </div>
     </div>
   )
