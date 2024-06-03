@@ -40,8 +40,10 @@ const Beranda = () => {
                 <p className="list-disc list-inside">Total Pendapatan Hari ini</p>
             </div>
 
-            {/* <div className="bg-second-color p-4 rounded-lg shadow-md">
-                <h2 className="text-xl font-semibold mb-2 pt-5">Top Item</h2>
+        </div>
+
+        <div className="bg-second-color p-4 rounded-lg shadow-md">
+                <h2 className="text-xl font-semibold mb-2 text-center">Top Item</h2>
                 <div className='flex'>
                     <div className='bg-white rounded-lg text-center mr-6'>
                         <h1 className='font-bold'>Royal Canin</h1>
@@ -53,12 +55,12 @@ const Beranda = () => {
                         <p>Rp 200.000</p>
                     </div>
 
-                    <div className='bg-white rounded-lg text-center'>
+                    <div className='bg-white rounded-lg text-center mr-6'>
                         <h1 className='font-bold'>Royal Canin</h1>
                         <p>Rp 200.000</p>
                     </div>
 
-                    <div className='bg-white rounded-lg text-center'>
+                    <div className='bg-white rounded-lg text-center mr-6'>
                         <h1 className='font-bold'>Royal Canin</h1>
                         <p>Rp 200.000</p>
                     </div>
@@ -68,18 +70,27 @@ const Beranda = () => {
                         <p>Rp 200.000</p>
                     </div>
                 </div>
-            </div>   */}
         </div>
         </div>    
             
         
-            
-        
-        
-
-        {/* <div className='sticky w-80 h-full flex flex-col bg-gradient-to-b from-second-color via-fourth-color to-second-color'>
+        <div className='sticky w-80 h-full bg-white items-center p-10'>
             <h1 className='text-4xl font-semibold mb-2'>Daftar Kasir</h1>
-        </div> */}
+            <div className="bg-white p-4 rounded-xl shadow-md flex items-center">
+                <img src="public/orang.jpg" className='size-10 rounded-xl' />
+                <p className='pl-2'>Ivan</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl shadow-md flex items-center mt-5">
+                <img src="public/orang.jpg" className='size-10 rounded-xl' />
+                <p className='pl-2'>Yoana</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl shadow-md flex items-center mt-5">
+                <img src="public/orang.jpg" className='size-10 rounded-xl' />
+                <p className='pl-2'>Yuni</p>
+            </div>
+
+            <button className=' bg-primary-color p-4 text-fourth-color flex gap-2 items-center rounded-md size-8 w-44 mt-5 hover:bg-black'><span className="material-icons">add_box</span>Tambah Kasir</button>
+        </div>
     </div>
   )
 }

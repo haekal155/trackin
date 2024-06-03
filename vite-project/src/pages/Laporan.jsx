@@ -31,7 +31,22 @@ const Laporan = () => {
         <div className='items-center bg-white p-10'>
             <h1 className='text-4xl font-semibold mb-2'>Laporan</h1>
 
-            <div className="overflow-x-auto">
+            <div className="bg-third-color p-4 rounded-lg shadow-md mt-6">
+                <h2 className="text-xl font-semibold mb-2">Penjualan Terbanyak</h2>
+                <div className='flex flex-col'>
+                    <div className='bg-white p-4 rounded-xl shadow-md items-center'>
+                        <h1>Royal Canin</h1>
+                        <p className='font-bold'>Rp 200.000</p>
+                    </div>
+
+                    <div className='bg-white p-4 rounded-xl shadow-md items-center mt-6'>
+                        <h1>Royal Canin</h1>
+                        <p className='font-bold'>Rp 200.000</p>
+                    </div>
+                </div>
+        </div>
+
+            <div className="overflow-x-auto mt-8">
                 <table className="min-w-full bg-white border border-gray-200">
                     <thead>
                         <tr>
@@ -56,6 +71,12 @@ const Laporan = () => {
                 </table>    
             </div>
         </div>
+
+        <div className="bg-second-color p-4 rounded-lg shadow-md mb-6 size-1/1 mr-6 mt-28">
+                <span className="material-icons bg-white rounded-md size-10 flex items-center justify-center">shopping_cart</span>
+                <h2 className="text-xl font-semibold mb-2 pt-5">Rp 10.000.000</h2>
+                <p className="list-disc list-inside">Total Pendapatan Bulan ini</p>
+            </div>
     </div>
   )
 }

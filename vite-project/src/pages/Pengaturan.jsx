@@ -26,7 +26,57 @@ const Pengaturan = () => {
 
         <div className='items-center bg-white p-10'>
             <h1 className='text-4xl font-semibold mb-2'>Pengaturan</h1>
+            <div className='mt-2'>
+                <p className='font-bold'>Account Setting</p>
+                <p>Setting your account</p>
+            </div>
+            <div className='mt-3'>
+                <p className='font-bold'>Profile Picture</p>
+                <img src="public/orang.jpg" className='size-24 rounded-full' />
+                <p className='mt-2'>Click <span className='font-bold text-primary-color hover:text-black cursor-pointer'>HERE</span> to change the picture</p>
+            </div>
+            <div className='mt-2'>
+                <p className='font-bold'>Personal Information & Phone Number</p>
+                <div className='flex space-x-4'>
+                    <label htmlFor="Email" className=''>First Name</label>
+                    <input type="email" placeholder='First' className=''  />
+                    <label htmlFor="Email">Last Name</label>
+                    <input type="email" placeholder='Last' className=''  />
+                </div>
+                <div className='flex flex-col'>
+                    <label htmlFor="Email">Email Address</label>
+                    <input type="email" placeholder='admin@gmail.com' className=''  />
+                    <label htmlFor="Email">Phone Number</label>
+                    <input type="email" placeholder='08123456789' className=''  />
+                </div>
+            <div className='mt-6'>
+                <button className='w-60 py-2 bg-primary-color text-white rounded-md cursor-pointer hover:bg-black'>Save Changes</button>
+            </div>
+            </div>
         </div>
+
+        <div className='sticky w-80 h-full items-center p-10'>
+            <div>
+                <p className='font-bold'>Security</p>
+                <p>Change your password</p>
+            </div>
+
+            <div className='mt-4'>
+                    <label htmlFor="Email" className=''>Current Password</label>
+                    <input type="email" placeholder='admin123'  />
+            </div>
+            <div className='mt-4'>
+                    <label htmlFor="Email" className=''>New Password</label>
+                    <input type="email" placeholder='123456'  />
+            </div>
+            <div className='mt-4'>
+                    <label htmlFor="Email" className=''>Confirm New Password</label>
+                    <input type="email" placeholder='123456'  />
+            </div>
+
+            <button className='w-60 py-2 bg-primary-color text-white rounded-md cursor-pointer hover:bg-black mt-6'>Save Changes</button>
+        </div>
+        
     </div>
   )
 }
