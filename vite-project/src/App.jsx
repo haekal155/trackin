@@ -17,7 +17,7 @@ import BerandaKasir from './pages/BerandaKasir';
 import StokBarangKasir from './pages/StokBarangKasir';
 import Pengaturan from './pages/Pengaturan';
 import PengaturanKasir from './pages/PengaturanKasir';
-import TableStok from './components/TableStok';
+// import TableStok from './components/TableStok';
 
 const App = () => {
   return (
@@ -34,7 +34,7 @@ const App = () => {
         <Route path='/stokbarangkasir' element={<StokBarangKasir />} />
         <Route path='/pengaturan' element={<Pengaturan />} />
         <Route path='/pengaturankasir' element={<PengaturanKasir />} />
-        <Route path='/tablestok' element={<TableStok />} />
+        {/* <Route path='/tablestok' element={<TableStok />} /> */}
       </Routes>
     </Router>
   )
