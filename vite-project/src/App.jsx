@@ -17,6 +17,7 @@ import BerandaKasir from './pages/BerandaKasir';
 import StokBarangKasir from './pages/StokBarangKasir';
 import Pengaturan from './pages/Pengaturan';
 import PengaturanKasir from './pages/PengaturanKasir';
+import TambahKasir from './components/TambahKasir';
 // import TableStok from './components/TableStok';
 
 const App = () => {
