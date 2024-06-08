@@ -28,22 +28,37 @@ const Laporan = () => {
             </div>
         </div>
 
-        <div className='items-center bg-white p-10'>
+        <div className='items-center bg-white p-9'>
             <h1 className='text-4xl font-semibold mb-2'>Laporan</h1>
 
             <div className="bg-green-200 p-4 rounded-lg shadow-md mt-6">
                 <h2 className="text-xl font-semibold mb-2">Penjualan Terbanyak</h2>
-                <div className='flex flex-col'>
-                    <div className='bg-white p-4 rounded-xl shadow-md items-center'>
-                        <h1>Royal Canin</h1>
-                        <p className='font-bold'>Rp 200.000</p>
-                    </div>
-
-                    <div className='bg-white p-4 rounded-xl shadow-md items-center mt-6'>
-                        <h1>Royal Canin</h1>
-                        <p className='font-bold'>Rp 200.000</p>
-                    </div>
+                <div className='bg-white p-4 rounded-xl shadow-md flex items-center mt-6'>
+                        <div className='flex items-center justify-between'>
+                            <div className='bg-second-color flex justify-center rounded-xl size-14'>
+                                <img src="public/royalcanin.png" className='flex justify-center items-center size-10 mt-2'/>
+                            </div>
+                            <h1 className='ml-5'>Royal Canin</h1>
+                            <div className='ml-80'>
+                                <p className='font-bold'>Rp 200.000</p>
+                            </div>
+                        </div>
                 </div>
+
+                <div className='flex flex-col'>
+                    <div className='bg-white p-4 rounded-xl shadow-md flex items-center mt-6'>
+                        <div className='flex items-center justify-between'>
+                            <div className='bg-second-color flex justify-center rounded-xl size-14'>
+                                <img src="public/royalcanin.png" className='flex justify-center items-center size-10 mt-2'/>
+                            </div>
+                            <h1 className='ml-5'>Royal Canin</h1>
+                            <div className='ml-80'>
+                                <p className='font-bold'>Rp 200.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                
         </div>
 
             <div className="overflow-x-auto mt-8">
@@ -72,7 +87,7 @@ const Laporan = () => {
             </div>
         </div>
 
-        <div className="bg-gray-200 p-4 rounded-lg shadow-md mb-6 size-1/1 mr-6 mt-28">
+        <div className="bg-gray-200 p-4 rounded-lg shadow-md mb-6 size-1/1 mr-6 mt-[8%]">
                 <span className="text-primary-color material-icons bg-white rounded-md size-10 flex items-center justify-center">monetization_on</span>
                 <h2 className="text-xl font-semibold mb-2 pt-5">Rp 10.000.000</h2>
                 <p className="list-disc list-inside">Total Pendapatan Bulan ini</p>

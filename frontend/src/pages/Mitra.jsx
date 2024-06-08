@@ -2,8 +2,8 @@ import React from 'react'
 
 const Mitra = () => {
   return (
-    <div className='bg-gradient-to-b from-second-color via-fourth-color to-second-color py-8 p-10'>
-      <h1 className='text-2xl pt-8 font-semibold flex justify-center'>Mitra Kami</h1>
+    <div className='pb-20 bg-gradient-to-b from-second-color via-fourth-color to-second-color py-8 p-10'>
+      <h1 className='text-2xl pt-6 font-semibold flex justify-center'>Mitra Kami</h1>
       <p className='text-base pt-1 flex justify-center'>Bergabunglah dengan TrackIn untuk menghadirkan solusi terdepan dalam industri ini.</p>
       <p className='text-base pt-1 flex justify-center mb-8'>Bersama kami, memberdayakan pertumbuhan bisnis Anda dengan inovasi yang tak tertandingi.</p>
 

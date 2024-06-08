@@ -1,10 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Fragment, useState } from 'react'
+import KeranjangKasir from '../components/KeranjangKasir'
 
 const BerandaKasir = () => {
+    const [showKeranjangKasir, setShowKeranjangKasir] = useState(false)
     const navigate = useNavigate()
 
   return (
+    <Fragment>
     <div className='w-full h-screen flex items-start'>
         <div className='relative w-[323px] h-full flex flex-col bg-gradient-to-b from-second-color via-fourth-color to-second-color'>
             <div className='w-20 absolute top-[10%] left-[35%] flex flex-col'>
@@ -24,9 +28,15 @@ const BerandaKasir = () => {
         </div>
 
         <div className=' bg-white p-10'>
-            <div className='md:flex flex-col md:flex-row justify-around items-center'>
+            <div className='flex justify-between mb-5'>
                 <h1 className='text-4xl font-semibold mb-2'>Kasir</h1>
-                <button className='text-primary-color text-3xl'><ion-icon name="cart-outline"></ion-icon></button>
+    
+                <div className="rounded-xl flex items-center justify-end">
+                    <button className='text-primary-color text-3xl mr-5' onClick={() => setShowKeranjangKasir(true)}><ion-icon name="cart-outline"></ion-icon></button> 
+                    <img src="public/orang.jpg" className='size-10 rounded-xl' />
+                    <p className='pl-2'>Yoana</p>
+                
+                    </div>
             </div>
 
             <div className='flex flex-wrap'>
@@ -143,6 +153,48 @@ const BerandaKasir = () => {
         
 
     </div>
+
+    <KeranjangKasir isvisible={showKeranjangKasir} onClose={() => setShowKeranjangKasir(false)}>
+            <div className='p-6'>
+                <h3 className='text-base text-gray-500 mb-5'>Keranjang</h3>
+                <div className='flex items-center justify-end'>
+                    <img src="public/royalcanin.png" className='size-14 mr-4' />
+                    <p className='text-sm'>Royal Canin 2 Kg</p>
+                    <div className='ml-64 text-sm text-primary-color'>
+                        Rp 200.000
+                    </div>
+                </div>
+
+                <div className='flex items-center justify-end mt-4'>
+                    <img src="public/royalcanin.png" className='size-14 mr-4' />
+                    <p className='text-sm'>Royal Canin 2 Kg</p>
+                    <div className='ml-64 text-sm text-primary-color'>
+                        Rp 200.000
+                    </div>
+                </div>
+
+                <div className='flex items-center justify-end mt-4'>
+                    <img src="public/royalcanin.png" className='size-14 mr-4' />
+                    <p className='text-sm'>Royal Canin 2 Kg</p>
+                    <div className='ml-64 text-sm text-primary-color'>
+                        Rp 200.000
+                    </div>
+                </div>
+
+                <div className='flex items-center justify-end'>
+                    <h3 className='text-base mb-5 mt-7 mr-44'>Total</h3>
+                    <p className='ml-64 text-sm'>
+                        Rp 600.000
+                    </p>
+                </div>
+
+                <div className='flex justify-end'>
+                    <button className='px-2 mt-3 text-base bg-primary-color text-white rounded-lg hover:bg-black'>Selesai</button>
+                </div>
+            </div>
+            
+        </KeranjangKasir>
+    </Fragment>
   )
 }
 
