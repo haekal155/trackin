@@ -17,8 +17,9 @@ import BerandaKasir from './pages/BerandaKasir';
 import StokBarangKasir from './pages/StokBarangKasir';
 import Pengaturan from './pages/Pengaturan';
 import PengaturanKasir from './pages/PengaturanKasir';
-import TambahKasir from './components/TambahKasir';
-// import TableStok from './components/TableStok';
+import Apalah from './pages/Apalah';
+import UserList from './components/UserList';
+import EditBarang from './components/EditBarang';
 
 const App = () => {
   return (
@@ -35,7 +36,9 @@ const App = () => {
         <Route path='/stokbarangkasir' element={<StokBarangKasir />} />
         <Route path='/pengaturan' element={<Pengaturan />} />
         <Route path='/pengaturankasir' element={<PengaturanKasir />} />
-        {/* <Route path='/tablestok' element={<TableStok />} /> */}
+        <Route path='/userlist' element={<UserList />} />
+        <Route path='/editbarang' element={<EditBarang />} />
+        <Route path='/test' element={<Apalah />} />
       </Routes>
     </Router>
   )
