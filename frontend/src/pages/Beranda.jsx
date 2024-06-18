@@ -100,6 +100,13 @@ const Beranda = () => {
             
         
         <div className='sticky w-80 h-full bg-white items-center p-10'>
+            <div className="rounded-xl flex items-center justify-start mt-5 ml-4 mb-5"> 
+                <img src="public/orang.jpg" className='size-10 rounded-xl' />
+                <div className='flex flex-col items-center'>
+                    <p className='pl-2'>Yoana</p>
+                    <div className='text-xs ml-2'><p>Admin</p></div>
+                </div>
+            </div>
             <h1 className='text-4xl font-semibold mb-2'>Daftar Kasir</h1>
             <div className="bg-white p-4 rounded-xl shadow-md flex items-center">
                 <img src="public/orang.jpg" className='size-10 rounded-xl' />

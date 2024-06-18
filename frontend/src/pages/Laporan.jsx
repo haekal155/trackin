@@ -28,7 +28,7 @@ const Laporan = () => {
         <div className='items-center bg-white p-9'>
             <h1 className='text-4xl font-semibold mb-2'>Laporan</h1>
 
-            <div className="bg-green-200 p-4 rounded-lg shadow-md mt-6">
+            <div className="bg-green-200 p-4 rounded-lg shadow-md mt-3">
                 <h2 className="text-xl font-semibold mb-2">Penjualan Terbanyak</h2>
                 <div className='bg-white p-4 rounded-xl shadow-md flex items-center mt-6'>
                         <div className='flex items-center justify-between'>

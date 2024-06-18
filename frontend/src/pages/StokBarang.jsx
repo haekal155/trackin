@@ -77,8 +77,24 @@ const StokBarang = () => {
                 </div>
             </div>
         
+            
 
-            <UserList />
+                <div className='flex flex-col'>
+                <UserList />
+                    <div className='bg-white p-4 rounded-xlflex items-center mt-6'>
+                        <div className='flex items-center justify-between'>
+                            <h1 className='ml-5 text-white'>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+                            <div className='ml-80'>
+                                <p className='font-bold text-white'>lorem ipsum dolor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                
+        
+        
+
+            
         </div>
     </div>
     <TambahBarang isvisible={showTambahBarang} onClose={() => setShowTambahBarang(false)}>

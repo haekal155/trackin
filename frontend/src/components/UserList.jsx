@@ -26,7 +26,7 @@ const deleteUser = async (id) => {
 }   
 
   return (
-    <div className="columns mt-5 flex justify-center text-center">
+    <div className="columns mt-5 flex justify-center text-center p-4 rounded-lg shadow-lg">
         <table className='min-w-full divide-y divide-gray-200 w-full'>
           <thead>
             <tr>
