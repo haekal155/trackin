@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 
-const Apalah = () => {
+const Test = () => {
   const data = [
     { no: 1, barang: 'Royal Canin', stok: '20', harga: 'Rp80.000' },
     { no: 2, barang: 'Obat Kucing', stok: '10', harga: 'Rp100.000' },
@@ -55,4 +55,4 @@ const Apalah = () => {
   )
 }
 
-export default Apalah
+export default Test

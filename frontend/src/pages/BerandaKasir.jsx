@@ -34,7 +34,7 @@ const BerandaKasir = () => {
                 <div className="rounded-xl flex items-center justify-end">
                     <button className='text-primary-color text-3xl mr-5' onClick={() => setShowKeranjangKasir(true)}><ion-icon name="cart-outline"></ion-icon></button> 
                     <img src="public/orang.jpg" className='size-10 rounded-xl' />
-                    <p className='pl-2'>Yoana</p>
+                    <p className='pl-2 font-semibold'>Yoana</p>
                 </div>
             </div>
 

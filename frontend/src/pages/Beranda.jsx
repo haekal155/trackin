@@ -103,23 +103,22 @@ const Beranda = () => {
             <div className="rounded-xl flex items-center justify-start mt-5 ml-4 mb-5"> 
                 <img src="public/orang.jpg" className='size-10 rounded-xl' />
                 <div className='flex flex-col items-center'>
-                    <p className='pl-2'>Yoana</p>
+                    <p className='pl-2 font-semibold'>Ivan</p>
                     <div className='text-xs ml-2'><p>Admin</p></div>
                 </div>
             </div>
             <h1 className='text-4xl font-semibold mb-2'>Daftar Kasir</h1>
             <div className="bg-white p-4 rounded-xl shadow-md flex items-center">
                 <img src="public/orang.jpg" className='size-10 rounded-xl' />
-                <li className='pl-2 cursor-pointer list-none' onClick={() => navigate('/berandakasir')}>Ivan</li>
-                {/* <p className='pl-2'>Ivan</p> */}
+                <li className='pl-2 font-semibold cursor-pointer list-none' onClick={() => navigate('/berandakasir')}>Yoana</li>
             </div>
             <div className="bg-white p-4 rounded-xl shadow-md flex items-center mt-5">
                 <img src="public/orang.jpg" className='size-10 rounded-xl' />
-                <p className='pl-2'>Yoana</p>
+                <p className='pl-2 font-semibold'>Yuni</p>
             </div>
             <div className="bg-white p-4 rounded-xl shadow-md flex items-center mt-5">
                 <img src="public/orang.jpg" className='size-10 rounded-xl' />
-                <p className='pl-2'>Yuni</p>
+                <p className='pl-2 font-semibold'>Rizky</p>
             </div>
             
             <button className=' bg-primary-color p-4 text-fourth-color flex gap-2 items-center rounded-md size-8 w-44 mt-5 hover:bg-black' onClick={() => setShowTambahKasir(true)}><span className="material-icons">add_box</span>Tambah Kasir</button>

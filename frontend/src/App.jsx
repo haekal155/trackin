@@ -17,7 +17,7 @@ import BerandaKasir from './pages/BerandaKasir';
 import StokBarangKasir from './pages/StokBarangKasir';
 import Pengaturan from './pages/Pengaturan';
 import PengaturanKasir from './pages/PengaturanKasir';
-import Apalah from './pages/Apalah';
+import Test from './pages/Test';
 import UserList from './components/UserList';
 import EditBarang from './components/EditBarang';
 
@@ -38,7 +38,7 @@ const App = () => {
         <Route path='/pengaturankasir' element={<PengaturanKasir />} />
         <Route path='/userlist' element={<UserList />} />
         <Route path='/editbarang' element={<EditBarang />} />
-        <Route path='/test' element={<Apalah />} />
+        <Route path='/test' element={<Test />} />
       </Routes>
     </Router>
   )

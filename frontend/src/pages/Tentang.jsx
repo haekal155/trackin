@@ -1,9 +1,10 @@
 import React from 'react'
-import {Carousel} from "flowbite-react"
+import { Carousel } from "flowbite-react"
+import { Element } from 'react-scroll'
 
 const Tentang = () => {
   return (
-    <div className='section2'>
+    <Element name='tentang'>
       <div className='bg-white mb-28'>
           <h1 className='text-2xl pt-8 font-semibold flex justify-center'>TrackIn</h1>
           <p className='text-base pt-1 flex justify-center mb-8'>Website yang menyediakan jasa untuk memanejemen produk anda agar lebih mudah dan teratur.</p>
@@ -46,10 +47,7 @@ const Tentang = () => {
               </div>
         </div> 
         </div>
-      
-    </div>
-    
-
+    </Element>
   )
 }
 
